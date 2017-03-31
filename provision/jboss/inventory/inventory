@@ -1,0 +1,3 @@
+#appserver1 ansible_ssh_host=appserver1 ansible_ssh_port=22 ansible_ssh_pass=vagrant ansible_ssh_user=vagrant
+
+apache ansible_ssh_host=192.168.33.34 ansible_ssh_port=22 ansible_ssh_pass=vagrant ansible_ssh_user=vagrant

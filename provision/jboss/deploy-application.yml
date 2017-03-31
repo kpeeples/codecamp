@@ -1,0 +1,9 @@
+---
+# This playbook deploys two simple applications to JBoss server. 
+
+- hosts: all
+  become: true
+  become_user: jboss
+
+  roles:
+    - java-app

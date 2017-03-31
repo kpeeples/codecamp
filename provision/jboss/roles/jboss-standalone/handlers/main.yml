@@ -1,0 +1,10 @@
+---
+- name: restart jboss
+  service: name=jboss state=restarted
+
+- name: restart iptables
+  become: yes
+  service: name=iptables state=restarted
+
+- name: start jboss
+  service: name=jboss state=started

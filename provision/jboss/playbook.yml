@@ -1,0 +1,8 @@
+---
+# This playbook is the master to build a jboss application server and deploy two applications - helloworld and ticketmonster
+
+- name: This playbook runs the build and deploy playbooks
+  hosts: all
+
+- include: build-jboss.yml
+- include: deploy-application.yml
