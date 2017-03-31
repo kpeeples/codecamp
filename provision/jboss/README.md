@@ -5,9 +5,7 @@ Requirements:
 - Expects CentOS/RHEL 6 or 7 hosts  
 
 Steps:  
-Run the vagrant command to build the VM and kickoff the ansible playbook:  
-
-```vagrant up```  
+NOTE use the steps on the main readme as so that the centos VM is setup first.  I separated the ansible config from the vagrant file for testing.  The full vagrantfile that includes the ansible call is in another repo.  
   
 The HelloWorld application will be available at ```http://127.0.0.1:8080/helloworld```  
 
