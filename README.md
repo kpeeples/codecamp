@@ -11,7 +11,7 @@ Steps to run the Provision and Configuration
 9. Open a bash shell from windows.  run, git clone https://github.com/kpeeples/codecamp.git  
 10. FOR the LAMP stack with the trusty64 enabled and run with vagrant up, run the command ansible-playbook playbook.yml -i inventory --become from the provision lamp directory in the bash shell.  Then you can browse to http://192.168.33.34 to see the Apache page.  
 OR depending on which of the boxes you used in the vagrantfile  
-10. FOR the JBOSS stack with the centos enabled in the vagrantfile, run the command  ansible-playbook playbook.yml -i inventory --become from the provision jboss directory in the bash shell.  he HelloWorld application will be available at http://192.168.33.34:8080/helloworld and The Ticket Monster application will be available at http://192.168.33.34:8080/ticket-monster  
+10. FOR the JBOSS stack with the centos enabled in the vagrantfile, run the command  ansible-playbook playbook.yml -i inventory/hosts --become from the provision jboss directory in the bash shell.  The HelloWorld application will be available at http://192.168.33.34:8080/helloworld and The Ticket Monster application will be available at http://192.168.33.34:8080/ticket-monster  
 NOTE: You can add the provision call for ansible playbooks in the vagrantfile but the host OS needs to be linux as we have ansible running in the bash subsystem.  
   
 [1] To run Oracle VM Virtual Box / VMware machines on 64-bit host there is a need to enable Virtualization Technology (VTx) and Virtualization Technology Directed I/O (VTd).  Usually these setting are disabled on the level of BIOS.  To enable VTx and VTd you have to change corresponding settings in the BIOS.  Here is an example how to do it for HP Compaq or similar PC:  
